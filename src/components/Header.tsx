@@ -21,7 +21,11 @@ export const Header: React.FunctionComponent = () => {
       className={`container sticky z-50 h-auto top-0  mx-auto bg-white  shadow-sm dark:bg-gray-900  dark:text-gray-200`}
     >
       <div className="flex items-center px-6 py-4 lg:px-10 lg:py-6 border-b border-gray-200 dark:border-gray-800">
-        <div className="w-full flex justify-start font-bold">WorkWork</div>
+        <div className="w-full flex justify-start font-bold">
+          <NextLink href="/">
+            <a>WorkWork</a>
+          </NextLink>
+        </div>
         <ThemeToggle />
         <button className="" onClick={() => toggleMobileMenu()}>
           <div className="relative  w-6 h-6 p-0">
@@ -44,14 +48,25 @@ export const Header: React.FunctionComponent = () => {
       <div className="relative ">
         {mobileMenuShown ? (
           <div className="w-full left-0 right-0 top-0 flex flex-col px-6 lg:px-10 absolute text-xl bg-white bg-opacity-70 backdrop-filter backdrop-blur-xl shadow-xl dark:bg-gray-900 dark:backdrop-filter dark:backdrop-filter-xl dark:bg-opacity-90">
-            <NextLink href="/">
-              <a className="py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700">
-                Home
+            <NextLink href="/" passHref>
+              <a>
+                <button
+                  onClick={toggleMobileMenu}
+                  className="text-left inline py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700"
+                >
+                  Home
+                </button>
               </a>
             </NextLink>
+
             <NextLink href="/about">
-              <a className="py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700  ">
-                About
+              <a>
+                <button
+                  onClick={toggleMobileMenu}
+                  className="text-left inline py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700"
+                >
+                  About
+                </button>
               </a>
             </NextLink>
           </div>

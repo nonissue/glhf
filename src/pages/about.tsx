@@ -10,7 +10,7 @@ const Index: NextPage & {
 
       <article className="prose max-w-none p-6 lg:p-10 dark:prose-light lg:prose-xl divide-y divide-gray-300 dark:divide-gray-800">
         <div>
-          <h1>Garlic bread with cheese: What the science tells us</h1>
+          <h1>What is WorkWork?</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&apos;s standard dummy
