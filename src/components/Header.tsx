@@ -53,6 +53,7 @@ export const Header: React.FunctionComponent = () => {
                 <button
                   onClick={toggleMobileMenu}
                   className="text-left inline py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700"
+                  aria-label="Home"
                 >
                   Home
                 </button>
@@ -64,6 +65,7 @@ export const Header: React.FunctionComponent = () => {
                 <button
                   onClick={toggleMobileMenu}
                   className="text-left inline py-4 font-mono border-b-0 border-gray-300 dark:border-gray-700"
+                  aria-label="About"
                 >
                   About
                 </button>
