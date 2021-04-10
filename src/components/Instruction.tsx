@@ -4,9 +4,10 @@ type InstructionProps = {
   timestamp: string;
   text: string;
   variant: "current" | "next" | "previous" | "upcoming";
+  step?: number;
 };
 
-const Instruction = ({ timestamp, text, variant }: InstructionProps) => {
+const Instruction = ({ timestamp, text, variant, step }: InstructionProps) => {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
@@ -26,7 +27,11 @@ const Instruction = ({ timestamp, text, variant }: InstructionProps) => {
   // };
 
   return (
-    <div className={`instruction ${variant} flex flex-row content-center`}>
+    <div
+      className={`${
+        step === 1 && "text-gray-500"
+      } instruction ${variant} flex flex-row content-center `}
+    >
       <div className={`timestamp ${variant}`}>{timestamp}</div>
       <div className="">{text}</div>
     </div>

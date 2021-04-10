@@ -30,6 +30,7 @@ body {
     &.upcoming {
       @apply lg:px-12;
       @apply py-1 px-6 text-lg font-normal opacity-60;
+      @apply last:border;
     }
 
     &.previous {
@@ -53,7 +54,7 @@ body {
       @apply mr-6;
     }
 
-    &.is-upcoming {
+    &.upcoming {
       @apply mr-6;
     }
   }
