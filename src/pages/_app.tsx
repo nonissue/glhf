@@ -29,7 +29,7 @@ const MyApp: React.FunctionComponent<AppPropsWithLayout> = ({
   return (
     <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
       <Head>
-        <title>non</title>
+        <title>glhf</title>
       </Head>
       {getLayout(<Component {...pageProps} />, pageProps)}
     </ThemeProvider>

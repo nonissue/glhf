@@ -7,7 +7,7 @@ type Props = {
 function Layout({ children }: Props): React.ReactElement {
   return (
     <>
-      <section className="dark:text-gray-400 text-gray-700 shadow-xl mb-0 px-0 bg-white dark:bg-gray-900 font-display max-w-4xl mx-auto">
+      <section className="font-display max-w-4xl mx-auto">
         <Header />
         {children}
       </section>

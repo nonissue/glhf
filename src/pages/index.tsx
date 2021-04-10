@@ -5,7 +5,7 @@ const Index: NextPage & {
   getLayout?: (component: JSX.Element) => JSX.Element;
 } = () => {
   return (
-    <section className="shadow-xl bg-white dark:bg-gray-900 mx-auto">
+    <section className="shadow-xl bg-white dark:bg-gray-800 mx-auto">
       <article className="prose max-w-none p-6 lg:p-10 dark:prose-light lg:prose-xl divide-y divide-gray-300 dark:divide-gray-800">
         <div>
           <h1>Garlic bread with cheese: What the science tells us</h1>

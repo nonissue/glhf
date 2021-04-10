@@ -18,7 +18,7 @@ export const Header: React.FunctionComponent = () => {
   return (
     // bg-opacity-50 backdrop-filter backdrop-blur-3xl dark:bg-opacity-80
     <div
-      className={`container sticky z-50 h-auto top-0  mx-auto bg-white shadow-sm text-gray-800 dark:bg-gray-900 dark:text-gray-200`}
+      className={`container sticky z-50 h-auto top-0  mx-auto bg-white shadow-sm text-gray-800 dark:bg-gray-800 dark:text-gray-200`}
     >
       <div className="flex items-center px-6 py-4 lg:px-10 lg:py-6 border-b border-gray-200 dark:border-gray-800">
         <div className="w-full flex justify-start font-bold">
