@@ -21,15 +21,13 @@ const Instruction = ({ timestamp, text, variant }: InstructionProps) => {
     console.log(show);
   }
 
-  const getClassName = () => {
-    return `is-${variant}`;
-  };
+  // const getClassName = () => {
+  //   return `is-${variant}`;
+  // };
 
   return (
-    <div
-      className={`instruction ${getClassName()} flex flex-row content-center`}
-    >
-      <div className={`timestamp ${getClassName()}`}>{timestamp}</div>
+    <div className={`instruction ${variant} flex flex-row content-center`}>
+      <div className={`timestamp ${variant}`}>{timestamp}</div>
       <div className="">{text}</div>
     </div>
   );

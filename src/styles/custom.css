@@ -17,22 +17,22 @@ body {
     /* default style button */
     @apply py-0 px-12 lg:px-10 border-b-2 border-bluegray-400 border-opacity-20;
 
-    &.is-current {
+    &.current {
       @apply lg:px-10 lg:text-3xl;
       @apply py-4 px-4 text-xl font-bold shadow-lg bg-gray-500 bg-opacity-50 dark:bg-opacity-10;
     }
 
-    &.is-next {
+    &.next {
       @apply lg:px-12;
       @apply py-3 px-6 text-xl font-normal opacity-100 shadow-sm bg-gray-700 bg-opacity-10 dark:bg-opacity-10;
     }
 
-    &.is-upcoming {
+    &.upcoming {
       @apply lg:px-12;
       @apply py-1 px-6 text-lg font-normal opacity-60;
     }
 
-    &.is-previous {
+    &.previous {
       @apply lg:px-12;
       @apply py-1 px-6 text-lg font-normal opacity-30;
     }
@@ -41,15 +41,15 @@ body {
   .timestamp {
     @apply self-center font-mono text-base font-normal;
 
-    &.is-current {
+    &.current {
       @apply mr-6   text-opacity-90 text-xl;
     }
 
-    &.is-previous {
+    &.previous {
       @apply mr-6;
     }
 
-    &.is-next {
+    &.next {
       @apply mr-6;
     }
 
