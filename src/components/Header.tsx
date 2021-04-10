@@ -47,7 +47,7 @@ export const Header: React.FunctionComponent = () => {
       </div>
       <div className="relative ">
         {mobileMenuShown ? (
-          <div className=" left-0 right-0 top-0 flex flex-col px-6 lg:px-10 absolute text-xl bg-white bg-opacity-80 backdrop-filter backdrop-blur-xl shadow-xl dark:bg-bluegray-700 dark:backdrop-filter dark:backdrop-filter-xl dark:bg-opacity-80">
+          <div className=" left-0 right-0 top-0 flex flex-col px-6 lg:px-10 absolute text-xl bg-white bg-opacity-80 backdrop-filter backdrop-blur-xl shadow-xl dark:bg-gray-700 dark:backdrop-filter dark:backdrop-filter-xl dark:bg-opacity-80">
             <div>
               <NextLink href="/" passHref>
                 <a>

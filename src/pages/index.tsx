@@ -6,7 +6,7 @@ const Index: NextPage & {
   getLayout?: (component: JSX.Element) => JSX.Element;
 } = () => {
   return (
-    <section className="shadow-xl min-h-full bg-white dark:bg-gray-900 mx-auto pt-4 divide-y divide-gray-200 dark:divide-gray-800 ">
+    <section className="shadow-xl min-h-full bg-white dark:bg-gray-900 mx-auto pt-4 divide-y divide-gray-200 dark:divide-gray-800">
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 mx-6 lg:mx-12 lg:my-4">
         <div className="flex flex-col justify-center mb-1 lg:my-0 lg:col-span-2">
           <div className="text-xs lg:text-2xl lg:mb-2 uppercase font-mono tracking-widest font-light text-gray-400">
