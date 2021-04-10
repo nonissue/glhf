@@ -1,0 +1,16 @@
+.instruction {
+  /* default style button */
+  @apply block;
+
+  &.is-current {
+    @apply py-2 px-6 lg:px-10 text-2xl font-bold;
+  }
+
+  &.is-next {
+    @apply py-0 px-6 lg:px-10 text-lg font-semibold opacity-40;
+  }
+
+  &.is-previous {
+    @apply py-0 px-6 lg:px-10 text-lg font-semibold opacity-40;
+  }
+}

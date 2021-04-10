@@ -10,13 +10,17 @@ module.exports = {
   darkMode: "class", // 'media' or 'class'
   theme: {
     extend: {
+      fontSize: {
+        xxs: ".625rem",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
         yellow: colors.yellow,
         purple: colors.purple,
         blue: colors.blue,
-        gray: colors.blueGray,
+        gray: colors.gray,
+        bluegray: colors.blueGray,
         red: colors.red,
         orange: colors.orange,
         green: colors.green,
@@ -136,6 +140,7 @@ module.exports = {
       ringOpacity: ["dark", "hover"],
       ringColor: ["dark", "hover"],
       typography: ["dark"],
+      textOpacity: ["dark", "hover"],
     },
   },
   plugins: [

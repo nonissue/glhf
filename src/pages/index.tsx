@@ -1,59 +1,68 @@
 import { NextPage } from "next/types";
 import { getLayout } from "src/layouts/Layout";
+import { Instruction } from "src/components";
 
 const Index: NextPage & {
   getLayout?: (component: JSX.Element) => JSX.Element;
 } = () => {
   return (
-    <section className="shadow-xl bg-white dark:bg-gray-800 mx-auto">
-      <article className="prose max-w-none p-6 lg:p-10 dark:prose-light lg:prose-xl divide-y divide-gray-300 dark:divide-gray-800">
-        <div>
-          <h1>Garlic bread with cheese: What the science tells us</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-          <p>
-            But a recent study shows that the celebrated appetizer may be linked
-            to a series of rabies cases springing up around the country.
-          </p>
+    <section className="shadow-xl min-h-full bg-white dark:bg-gray-900 mx-auto pt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 mx-6 lg:mx-12 lg:my-2">
+        <div className="flex flex-col justify-between mb-1 lg:my-0 lg:col-span-3">
+          <div className="text-xs lg:text-sm uppercase font-mono tracking-widest font-light">
+            Build:
+          </div>
+          <div className="text-xl lg:text-4xl font-semibold">
+            Safe Marine Drop
+          </div>
         </div>
-
-        <div>
-          <h2>Garlic bread with cheese: What the science tells us</h2>
-          <p>
-            For years parents have espoused the health benefits of eating garlic
-            bread with cheese to their children, with the food earning such an
-            iconic status in our culture that kids will often dress up as warm,
-            cheesy loaf for Halloween.
-          </p>
-
-          <p>
-            But a recent study shows that the celebrated appetizer may be linked
-            to a series of rabies cases springing up around the country.
-          </p>
+        <div className="flex flex-col justify-around mb-1 py-0 lg:py-2 leading-3">
+          <div className="text-xxs uppercase font-mono tracking-wide font-light">
+            Difficulty:
+          </div>
+          <div className="text-sm lg:text-lg font-medium">Intermediate</div>
         </div>
-
-        <div>
-          <h3>Garlic bread with cheese: What the science tells us</h3>
-          <p>
-            For years parents have espoused the health benefits of eating garlic
-            bread with cheese to their children, with the food earning such an
-            iconic status in our culture that kids will often dress up as warm,
-            cheesy loaf for Halloween.
-          </p>
-          <p>
-            But a recent study shows that the celebrated appetizer may be linked
-            to a series of rabies cases springing up around the country.
-          </p>
+        <div className="flex flex-col justify-around mb-1 py-0 lg:py-2 leading-3">
+          <div className="text-xxs uppercase font-mono tracking-wide font-light">
+            Race:
+          </div>
+          <div className="text-sm lg:text-lg font-medium">Terran</div>
         </div>
+        <div className="flex flex-col justify-around my-0 py-0 lg:py-2 leading-3">
+          <div className="text-xxs uppercase font-mono tracking-wide font-light">
+            Date:
+          </div>
+          <div className="text-sm lg:text-lg font-medium">21-04-09</div>
+        </div>
+      </div>
+      <Instruction timestamp="0:11" text="Say (glhf)!" variant="previous" />
+      <Instruction
+        timestamp="0:21"
+        text="Build supply depot"
+        variant="previous"
+      />
+      <Instruction
+        timestamp="0:32"
+        text="Send scouting worker"
+        variant="current"
+      />
+      <Instruction timestamp="0:58" text="Build Barracks" variant="next" />
+      <Instruction timestamp="1:02" text="Build Refinery" variant="upcoming" />
+      <Instruction
+        timestamp="1:32"
+        text="Build Reactor on Barracks"
+        variant="upcoming"
+      />
+      <Instruction
+        timestamp="1:58"
+        text="Start Combat Shields"
+        variant="upcoming"
+      />
+
+      <article className="">
+        <h2 className="font-display text-center px-12 py-4 text-3xl font-bold text-transparent">
+          GLHF!
+        </h2>
       </article>
     </section>
   );

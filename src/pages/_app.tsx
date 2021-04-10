@@ -6,8 +6,8 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 
-import "./global.css";
-import "./custom.css";
+import "src/styles/global.css";
+import "src/styles/custom.css";
 
 type ComponentWithLayout<P> = NextComponentType<NextPageContext, any, P> & {
   getLayout?: (
