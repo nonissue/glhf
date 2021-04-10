@@ -38,7 +38,7 @@ const Index: NextPage & {
         </div>
       </div>
 
-      <div className="p0-2">
+      <div className="p-2">
         <Instruction
           timestamp="0:11"
           text="Say (glhf)!"
