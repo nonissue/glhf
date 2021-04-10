@@ -6,8 +6,6 @@ const Index: NextPage & {
 } = () => {
   return (
     <section className="shadow-xl bg-white dark:bg-gray-900 mx-auto">
-      {/* <div className="py-6 dark:bg-gray-900 px-6 lg:px-10 mx-auto"> */}
-
       <article className="prose max-w-none p-6 lg:p-10 dark:prose-light lg:prose-xl divide-y divide-gray-300 dark:divide-gray-800">
         <div>
           <h1>What is WorkWork?</h1>
@@ -57,7 +55,6 @@ const Index: NextPage & {
           </p>
         </div>
       </article>
-      {/* </div> */}
     </section>
   );
 };

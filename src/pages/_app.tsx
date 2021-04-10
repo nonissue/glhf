@@ -4,13 +4,11 @@
 import type { NextComponentType, NextPageContext } from "next";
 import { AppProps } from "next/app";
 import Head from "next/head";
-// import type { NextRouter } from "next/router";
 import { ThemeProvider } from "next-themes";
 
 import "./global.css";
 import "./custom.css";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ComponentWithLayout<P> = NextComponentType<NextPageContext, any, P> & {
   getLayout?: (
     page: JSX.Element,

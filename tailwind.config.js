@@ -1,7 +1,5 @@
-/* eslint-disable no-undef */
-// eslint-disable-next-line
+/* eslint-disable */
 const colors = require("tailwindcss/colors");
-// eslint-disable-next-line no-undef
 module.exports = {
   purge: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
@@ -17,7 +15,6 @@ module.exports = {
         purple: colors.purple,
         blue: colors.blue,
         gray: colors.blueGray,
-        // bgray: colors.blueGray,
         red: colors.red,
         orange: colors.orange,
         green: colors.green,
